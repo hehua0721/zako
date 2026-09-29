@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生日快乐！</title>
+  <style>
+    /* 页面整体风格：粉色温馨渐变 */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #333;
+    }
+
+    /* 卡片容器 */
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(255, 154, 158, 0.4);
+    }
+
+    /* 大蛋糕图标 */
+    .icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+
+    /* 名字 */
+    h1 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      color: #d6336c;
+    }
+
+    /* 生日日期 */
+    .date {
+      font-size: 16px;
+      color: #888;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    /* 祝福语 */
+    .message {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    /* 底部小装饰 */
+    .footer {
+      color: #d6336c;
+      font-size: 14px;
+    }
+
+    /* 蛋糕跳动动画 */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="icon">🎂</div>
+    
+    <!-- ================= 修改区域 1：名字 ================= -->
+    <!-- 把 "小美" 改成她的名字 -->
+    <h1>祝 徐成浩  生日快乐！</h1>
+    <!-- ==================================================== -->
+
+    <!-- ================= 修改区域 2：日期 ================= -->
+    <!-- 把 "10月24日" 改成她的生日 -->
+    <p class="date">📅 9月29日</p>
+    <!-- ==================================================== -->
+
+    <!-- ================= 修改区域 3：祝福语 ================= -->
+    <!-- 把下面这段话改成你想对她说的话 -->
+    <p class="message">
+      愿你年年有今日，岁岁有今朝！<br>
+      新的一岁，愿你平安喜乐，万事胜意。<br>
+      愿你眼里有光，心中有爱，永远做最闪耀的自己！
+    </p>
+    <!-- ==================================================== -->
+
+    <div class="footer">
+      🎈 生日快乐 🎈
+    </div>
+  </div>
+
+</body>
+</html>
